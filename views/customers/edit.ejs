@@ -1,0 +1,8 @@
+<div class="container">
+    <h1>Edit</h1>
+    <form action="/customer/edit/<%= customer._id%> ?_method=PUT" method="POST">
+        <input type="text" placeholder="Name" name="name" value="<%= customer.name%>">
+        <input type="text" placeholder="Old" name="old" value="<%= customer.old%>">
+        <input type="submit" value="SAVE">
+    </form>
+</div>
